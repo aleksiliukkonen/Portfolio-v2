@@ -14,14 +14,16 @@ body
 
 	&__container
 		width: 60%
+		z-index: 1
 
 	&__content
 		transform: skew(0deg, 4deg)
 		max-width: 1170px
 		margin: 0 auto
 		position: relative
-		top: 60px
+		top: 90px
 		display: flex
+		padding: 0 1em
 
 	&__intro
 		font-size: 2rem
@@ -49,6 +51,17 @@ body
 		text-transform: uppercase
 		margin: 0.4em 0 0.2em 0
 
+		& > span 
+			color: $primary-color
+
+.portrait
+	max-width: 660px
+	position: absolute
+	right: 0
+
+.portrait__shot
+	max-width: 100%
+
 .btn--green 
 	background-color: $primary-color
 
@@ -60,7 +73,7 @@ body
 	text-decoration: none
 	border: 0
 	outline: 0
-	font-size: 1.5rem
+	font-size: 1.4rem
 	padding: 0.6em 1.5em
 	display: inline-block
 	transform: skew(-10deg)
@@ -72,5 +85,14 @@ body
 	& > span 
 		display: inline-block 
 		transform: skew(10deg)
+
+
+@media (max-width: 1170px) 
+
+	.portrait
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
 
 //@media (max-width: 767px) 
