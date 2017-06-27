@@ -1,5 +1,49 @@
 .contact
 	max-width: 1170px
+	height: 550px
 	margin: 10em auto
 	padding: 2em 1em
-	border: 1px solid red
+	display: flex
+
+	&__image
+		overflow: hidden
+		background-size: cover
+		background-position: center top
+		background-image: url('../img/Aleksi.jpg')
+		flex: 2
+
+	&__info
+		color: $body-color
+		flex: 3
+		background-image: linear-gradient(116deg, #dfe3ed, #ffffff)
+	
+	&__heading
+		font-size: 3rem
+		font-weight: 300
+		margin: 1em 0 0 -1.2em
+
+	&__subheading
+		margin: 0.5em 0 0 -1.8em
+		font-size: 2rem
+		font-weight: 300
+		color: $body-color-light
+
+.hide
+	visibility: hidden
+
+@media (max-width: 767px)
+
+	.contact
+		display: block
+
+		&__info
+			text-align: center
+			padding: 4em
+
+		&__heading
+			font-size: 2.5rem
+			font-weight: 300
+			margin: 0
+
+		&__subheading
+			margin: 0.5em 0 0 0
