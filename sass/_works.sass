@@ -1,0 +1,48 @@
+.food, .adventure, .watch
+	margin-bottom: 10em
+	max-width: 770px
+	background: linear-gradient(127deg, #dfe3ed, #ffffff)
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+
+.adventure
+	float: right
+
+.watch
+	clear: right
+
+.adventure .works__description
+	left: -11.5em 
+
+.works
+	max-width: 1170px
+	margin: 140px auto
+	padding: 0 1em
+
+	&__shot
+		max-width: 100%
+		margin-top: -2em
+		padding-bottom: 2em
+
+	&__description
+		position: absolute
+		right: -11.5em
+		max-width: 465px
+		text-align: center
+		padding: 2em 1em
+		background-color: $primary-color
+		font-size: 2rem
+
+@media (max-width: 1170px) 
+
+	.works__description
+		position: static
+
+	.food, .adventure, .watch
+		max-width: 100%
+		flex-direction: column
+
+	.adventure
+		float: none
