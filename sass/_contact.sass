@@ -1,7 +1,7 @@
 .contact
 	max-width: 1170px
 	margin: 0 auto
-	padding: 10em 1em
+	padding: 8em 1em
 	display: flex
 
 	&__image
@@ -19,18 +19,47 @@
 	&__heading
 		font-size: 3rem
 		font-weight: 300
-		margin: 1em 0 0 -1.2em
+		margin: 0 0 0 -1em
+		padding: 1.2em 0.5em 0 0
 
 	&__subheading
-		margin: 0.5em 0 0 -1.8em
+		margin: 0.5em 0 0 -1.5em
 		font-size: 2rem
 		font-weight: 300
 		color: $body-color-light
+		padding: 0 0.5em 0 0
 
 .hide
 	visibility: hidden
 
-@media (max-width: 767px)
+.contacts
+	display: flex
+	margin: 2em 0 2em -2.8em
+
+	a
+		font-size: 1.3em
+		font-weight: 700
+
+	img 
+		width: 50px
+		margin-right: 1em
+
+	&__email
+		display: flex
+		align-items: center
+		background-color: #fff
+		box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.1)
+		padding: 1em 1.5em 1em 1.5em
+		margin-right: 2em
+
+	&__phone
+		display: flex
+		align-items: center
+		background-color: #fff
+		box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.1)
+		padding: 1em 1.5em 1em 1.5em
+
+@media (max-width: 1015px)
 
 	.contact
 		padding: 12em 1em 1em 1em
@@ -38,12 +67,19 @@
 
 		&__info
 			text-align: center
-			padding: 4em
+			padding: 2em
 
 		&__heading
-			font-size: 2.5rem
 			font-weight: 300
-			margin: 0
+			margin: 0.5em 0 0 0
+			padding: 0
 
 		&__subheading
-			margin: 0.5em 0 0 0
+			margin: 1em 0 1.5em 0
+
+	.contacts
+		flex-direction: column
+		margin: 2em 0 0 0
+
+		&__email
+			margin: 0 0 1em 0
