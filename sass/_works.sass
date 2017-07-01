@@ -23,7 +23,7 @@
 	background: url('../img/works_bg.png') no-repeat center center
 	background-size: cover
 
-.food, .adventure, .watch
+.food, .adventure, .watch, .airport
 	margin-bottom: 10em
 	max-width: 770px
 	background: linear-gradient(127deg, #dfe3ed, #ffffff)
@@ -32,14 +32,16 @@
 	justify-content: center
 	align-items: center
 
-.adventure
+.adventure, .airport
 	float: right
 
-.watch
+.watch, .airport
 	clear: right
+
+.airport
 	margin-bottom: 0
 
-.adventure .works__description
+.adventure .works__description, .airport .works__description
 	left: -11.5em 
 
 .works
@@ -64,7 +66,7 @@
 
 @media (max-width: 1170px) 
 
-	.adventure .works__description
+	.adventure .works__description, .airport .works__description
 		left: 0 
 
 	.works__description
@@ -83,7 +85,7 @@
 	.adventure
 		float: none
 	
-	.watch
+	.airport
 		margin-bottom: 0
 
 	.works__shot
